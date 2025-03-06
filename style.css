@@ -1,0 +1,112 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212; /* Dark background, giving a techy vibe */
+}
+body:hover {
+  transform: rotate(360deg);
+}
+
+.outercontainer {
+  border: 7px solid #6e07f3; /* Neon purple border like Black Panther suit */
+  height: 600px;
+  width: 320px;
+  border-radius: 50px;
+  background: linear-gradient(
+    145deg,
+    #2a2a2a,
+    #1a1a1a
+  ); /* Metal-like gradient */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9),
+    /* Heavy shadow for depth */ inset 0px 0px 10px rgba(110, 7, 243, 0.6); /* Inner glowing effect */
+}
+.outercontainer:hover {
+  transition: rotate(360deg);
+}
+
+.viewcontainer {
+  height: 20%;
+  width: 90%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #00ffc3; /* Neon green text like tech displays */
+  font-size: 60px;
+  font-weight: 400;
+  background-color: #0a0a0a; /* Darker background for display */
+  padding-right: 10px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px #00ffc3; /* Glowing inner shadow for text field */
+}
+
+.keypadcontainer {
+  height: 70%;
+  width: 90%;
+}
+
+.keypadgrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.calculatorbutton {
+  border: none; /* No solid borders, use shadows for the floating effect */
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 25px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 5px 10px rgb(231, 231, 231); /* Button shadow for floating effect */
+}
+
+.calculatorbutton:hover {
+  cursor: pointer;
+  transform: translateY(-3px); /* Hover effect: slightly moves button up */
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5); /* Hover shadow effect */
+}
+
+.calculatorbutton:active {
+  transform: translateY(-3px) rotate(360deg); /* Keep translateY from hover and add rotation */
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 1); /* Intense shadow on active */
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  /* background: linear-gradient(
+    145deg,
+    #ffffff,
+    #f0ed5c
+  ); Metal-like button surface */
+}
+
+.zerokey {
+  width: 135px;
+  height: 60px;
+  text-align: left;
+  padding-left: 60px;
+  background: linear-gradient(
+    145deg,
+    #393939,
+    #1f1f1f
+  ); /* Keep same style as other keys */
+}
+
+.orangestyle {
+  background-color: #e87073; /* Dark red like Iron Man’s suit */
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+
+  box-shadow: inset 0px 0px 10px rgba(211, 47, 47, 0.7);
+}
